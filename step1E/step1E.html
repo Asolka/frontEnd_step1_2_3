@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist Front End</title>
+</head>
+<body>
 
+
+<script>
+    // Variable priorités
+let priorites = [
+    {"idPriorite": 1, "priorite": "Urgente"},
+    {"idPriorite": 2, "priorite": "Importante"},
+    {"idPriorite": 3, "priorite": "Normale"},
+    {"idPriorite": 4, "priorite": "Faible"},
+    {"idPriorite": 5, "priorite": "Optionnelle"}
+];
+console.log(priorites);
+
+    // Variable catégories
+let categories = [
+    {"idCategorie": 1, "categorie": "Etudes"},
+    {"idCategorie": 2, "categorie": "Maison"},
+    {"idCategorie": 3, "categorie": "Courses"},
+    {"idCategorie": 4, "categorie": "Santé"},
+    {"idCategorie": 5, "categorie": "Perso"}
+];
+console.log(categories);
+
+    // Variable Statuts
+let statuts = [
+    {"idStatut": 1, "statut": "Terminé"},
+    {"idStatut": 2, "statut": "En cours"},
+    {"idStatut": 3, "statut": "En pause"},
+    {"idStatut": 4, "statut": "Pas commencée"}
+];
+console.log(statuts);
+
+    // Variable tâches
+let taches = [
+    {
+        "idTache": 1,
+        "titreTache": "Faire Etape 1 Json",
+        "descriptionTache": "Réaliser les différentes étapes de 1A à 1E puis les envoyer indépendamment",
+        "dateCreation": "2026-09-09",
+        "dateLimite": "2026-09-24",
+        "idPriorite": 3,
+        "idCategorie": 1,
+        "idStatut": 2
+    },
+    {
+        "idTache": 2,
+        "titreTache": "Faire des courses",
+        "descriptionTache": "Acheter paint, lait, oeufs, fruits",
+        "dateCreation": "2026-09-22",
+        "dateLimite": "2026-09-27",
+        "idPriorite": 2,
+        "idCategorie": 3,
+        "idStatut": 4
+    },
+    {
+        "idTache": 3,
+        "titreTache": "Rendez-vous chez le medecin",
+        "descriptionTache": "Consultation annuelle",
+        "dateCreation": "2026-09-15",
+        "dateLimite": "2026-10-02",
+        "idPriorite": 1,
+        "idCategorie": 4,
+        "idStatut": 1
+    }
+];
+console.log(taches);
+</script>
+</body>
+</html>
