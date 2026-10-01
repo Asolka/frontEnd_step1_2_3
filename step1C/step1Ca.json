@@ -1,1 +1,7 @@
-
+[
+    {"idCategorie": 1, "categorie": "Etudes"},
+    {"idCategorie": 2, "categorie": "Maison"},
+    {"idCategorie": 3, "categorie": "Courses"},
+    {"idCategorie": 4, "categorie": "Santé"},
+    {"idCategorie": 5, "categorie": "Perso"}
+]

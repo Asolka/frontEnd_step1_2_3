@@ -1,1 +1,6 @@
-
+[
+    {"idStatut": 1, "statut": "Terminé"},
+    {"idStatut": 2, "statut": "En cours"},
+    {"idStatut": 3, "statut": "En pause"},
+    {"idStatut": 4, "statut": "Pas commencée"}
+]
