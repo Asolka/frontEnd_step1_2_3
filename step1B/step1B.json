@@ -1,1 +1,7 @@
-
+[
+    {"idPriorite": 1, "priorite": "Urgente"},
+    {"idPriorite": 2, "priorite": "Importante"},
+    {"idPriorite": 3, "priorite": "Normale"},
+    {"idPriorite": 4, "priorite": "Faible"},
+    {"idPriorite": 5, "priorite": "Optionnelle"}
+]
