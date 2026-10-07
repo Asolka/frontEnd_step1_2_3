@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist - Ajouter une tâche</title>
+    <link rel="stylesheet" href="step2A.css">
+</head>
+
+<body>
+    <header>
+        <h1>To Do List</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Nouvelle Tâche</h2>
+            <form method="post">
+
+                <!-- Nom de la tâche -->
+                <div class="champ">
+                    <label for="titreTache">Titre*</label>
+                    <input type="text" id="titreTache" name="titreTache" required>
+                </div>
+
+                <!-- Description de la tâche -->
+                <div class="champ">
+                    <label for="descriptionTache">Description</label>
+                    <textarea id="descriptionTache" name="descriptionTache" rows="3" maxlength="100"></textarea>
+                </div>
+
+                <div class="champ">
+                    <label for="dateCreation">Date de création</label>
+                    <input type="date" id="dateCreation" name="dateCreation" readonly>
+                </div>
+
+                <div class="champ">
+                    <label for="dateLimite">Date limite</label>
+                    <input type="date" id="dateLimite" name="dateLimite" required>
+                </div>
+
+                <div class="champ">
+                    <label for="idPriorite">Priorité</label>
+                    <select id="idPriorite" name="idPriorite" required>
+                        <option value="">Choisir une priorité</option>
+                        <option value="1">Urgente</option>
+                        <option value="2">Importante</option>
+                        <option value="3">Normale</option>
+                        <option value="4">Faible</option>
+                        <option value="5">Optionnelle</option>
+                    </select>
+                </div>
+
+                <div class="champ">
+                    <label for="idCatégorie">Catégorie</label>
+                    <select id="idCatégorie" name="idCatégorie" required>
+                        <option value="">Choisir une catégorie</option>
+                        <option value="1">Études</option>
+                        <option value="2">Maison</option>
+                        <option value="3">Courses</option>
+                        <option value="4">Santé</option>
+                        <option value="5">Perso</option>
+                    </select>
+                </div>
+
+                <div class="champ">
+                    <label for="idStatut">Statut</label>
+                    <select id="idStatut" name="idStatut" required>
+                        <option value="">Choisir un statut</option>
+                        <option value="1">Pas commencée</option>
+                        <option value="2">En cours</option>
+                        <option value="3">En pause</option>
+                        <option value="4">Terminée</option>
+                    </select>
+                </div>
+
+                <div class="champ">
+                    <button type="submit">Ajouter</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Amal, Charles, Noam - Master SYNVA M2 2026</p>
+    </footer>
+
+    <script>
+        // Date du jour au format AAAA-MM-JJ (heure locale)
+        const aujourdhui = new Date();
+        const annee = aujourdhui.getFullYear();
+        const mois = String(aujourdhui.getMonth() + 1).padStart(2, "0");
+        const jour = String(aujourdhui.getDate()).padStart(2, "0");
+        document.getElementById("dateCreation").value = annee + "-" + mois + "-" + jour;
+    </script>
+</body>
+</html>
