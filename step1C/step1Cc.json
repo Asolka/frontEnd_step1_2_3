@@ -1,1 +1,8 @@
+[
+    {"idRecurrence": 1, "recurrence": "Aucune"},
+    {"idRecurrence": 2, "recurrence": "Quotidienne"},
+    {"idRecurrence": 3, "recurrence": "Hebdomadaire"},
+    {"idRecurrence": 4, "recurrence": "Mensuelle"},
+    {"idRecurrence": 5, "recurrence": "Annuelle"}
+]
 
