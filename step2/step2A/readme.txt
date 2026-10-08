@@ -1,2 +1,1 @@
-
-https://amiardnoam.alwaysdata.net/todolistfront/step2A.html
+https://amiardnoam.alwaysdata.net/todolistfront/Step_2A/step2A.html
