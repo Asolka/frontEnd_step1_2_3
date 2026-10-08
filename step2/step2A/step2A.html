@@ -21,13 +21,13 @@
                 <!-- Nom de la tâche -->
                 <div class="champ">
                     <label for="titreTache">Titre*</label>
-                    <input type="text" id="titreTache" name="titreTache" required>
+                    <input type="text" id="titreTache" name="titreTache" placeholder="Nom de la tâche" required>
                 </div>
 
                 <!-- Description de la tâche -->
                 <div class="champ">
                     <label for="descriptionTache">Description</label>
-                    <textarea id="descriptionTache" name="descriptionTache" rows="3" maxlength="100"></textarea>
+                    <textarea id="descriptionTache" name="descriptionTache" rows="3" maxlength="100" placeholder="Description de la tâche"></textarea>
                 </div>
 
                 <div class="champ">
@@ -66,12 +66,22 @@
 
                 <div class="champ">
                     <label for="idStatut">Statut</label>
-                    <select id="idStatut" name="idStatut" required>
-                        <option value="">Choisir un statut</option>
-                        <option value="1">Pas commencée</option>
+                    <select id="idStatut" name="idStatut">
+                        <option value="1" selected>Pas commencée</option>
                         <option value="2">En cours</option>
                         <option value="3">En pause</option>
                         <option value="4">Terminée</option>
+                    </select>
+                </div>
+
+                <div class="champ">
+                    <label for="idRecurrence">Récurrence</label>
+                    <select id="idRecurrence" name="idRecurrence">
+                        <option value="1" selected>Aucune</option>
+                        <option value="2">Quotidienne</option>
+                        <option value="3">Hebdomadaire</option>
+                        <option value="4">Mensuelle</option>
+                        <option value="5">Annuelle</option>
                     </select>
                 </div>
 
