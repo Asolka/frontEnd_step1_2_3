@@ -1,9 +1,9 @@
 [
     {
         "idTache": 1,
-        "titreTache": "",
-        "descriptionTache": "",
-        "dateCreation": "",
-        "dateLimite": ""
+        "titreTache": "Réviser le cours de JavaScript",
+        "descriptionTache": "Relire les chapitres sur le DOM et les événements",
+        "dateCreation": "2026-10-08",
+        "dateLimite": "2026-10-15"
     }
 ]
