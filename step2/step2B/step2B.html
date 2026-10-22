@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todolist - Ajouter une tâche</title>
+    <link rel="stylesheet" href="step2B.css" />
+    <script src="step2B.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>To Do List</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Nouvelle Tâche</h2>
+        <form method="post">
+          <!-- Nom de la tâche -->
+
+          <label for="titreTache">Titre*</label>
+          <input
+            type="text"
+            id="titreTache"
+            name="titreTache"
+            placeholder="Nom de la tâche"
+            required
+          />
+
+          <!-- Description de la tâche -->
+
+          <label for="descriptionTache">Description</label>
+          <textarea
+            id="descriptionTache"
+            name="descriptionTache"
+            rows="3"
+            maxlength="100"
+            placeholder="Description de la tâche"
+          ></textarea>
+
+          <label for="dateCreation">Date de création</label>
+          <input type="date" id="dateCreation" name="dateCreation" readonly />
+
+          <label for="dateLimite">Date limite</label>
+          <input type="date" id="dateLimite" name="dateLimite" required />
+
+          <label for="idPriorite">Priorité</label>
+          <select id="idPriorite" name="idPriorite" required>
+            <option value="" selected disabled hidden>Choisir une priorité</option>
+            <!-- Complété en JS -->
+          </select>
+
+          <label for="idCategorie">Catégorie</label>
+          <select id="idCategorie" name="idCategorie" required>
+            <option value="" selected disabled hidden>Choisir une catégorie</option>
+            <!-- Complété en JS -->
+          </select>
+
+          <label for="idStatut">Statut</label>
+          <select id="idStatut" name="idStatut">
+            <option value="" selected></option>
+            <!-- Complété en JS -->
+          </select>
+
+          <label for="idRecurrence">Récurrence</label>
+          <select id="idRecurrence" name="idRecurrence">
+            <option value="" selected></option>
+            <!-- Complété en JS -->
+          </select>
+
+          <button type="submit">Ajouter</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Amal, Charles, Noam - Master SYNVA M2 2026</p>
+    </footer>
+
+    <script>
+      // Date du jour au format AAAA-MM-JJ (heure locale)
+      const aujourdhui = new Date();
+      const annee = aujourdhui.getFullYear();
+      const mois = String(aujourdhui.getMonth() + 1).padStart(2, "0");
+      const jour = String(aujourdhui.getDate()).padStart(2, "0");
+      document.getElementById("dateCreation").value =
+        annee + "-" + mois + "-" + jour;
+    </script>
+  </body>
+</html>
